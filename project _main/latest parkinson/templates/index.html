@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice Parkinson Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Live Voice Parkinson’s Prediction</h1>
+
+    <form method="POST" action="/record">
+        <button type="submit">🎙️ Record 5s Voice & Predict</button>
+    </form>
+
+    <hr>
+
+    <h2>Or Upload Your Voice Measurement CSV File</h2>
+    <form method="POST" action="/upload_csv" enctype="multipart/form-data">
+        <input type="file" name="csv_file" required><br><br>
+        <button type="submit">📁 Upload & Predict</button>
+    </form>
+</body>
+</html>

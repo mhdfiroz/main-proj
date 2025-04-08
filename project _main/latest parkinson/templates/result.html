@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction: {{ result }}</h1>
+    <h2>Features</h2>
+    <div>{{ table | safe }}</div>
+    <a href="/download_csv">Download CSV of Features</a><br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
